@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #377367;
+    background-color: #F1F8E8;
+    display: flex;
+    justify-content: normal;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Sidebar Section */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #377367;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.sidebar-logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 40px;
+    display: block;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+/* Header: Make it smaller */
+.header {
+    background-color: #377367;
+    color: white;
+    padding: 5px 10px; /* Reduced padding to make the header thinner */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: 57px;
+    z-index: 1000;
+    font-size: 14px; /* Smaller font size */
+}
+.search-bar {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px; /* Space between the search bar and other items */
+}
+.header-nav {
+    display: flex;
+    gap: 200px; /* Add space between the navigation links */
+    margin-left: 200px;
+}
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.header-nav a:hover {
+    text-decoration: underline;
+}
+.logo {
+    margin-top: -30px;
+    margin-left: 118px;
+}
+.educaid {
+    margin-top: -25px;
+}
+.round-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50%;
+    padding-top: 130px;
+    margin-left: -730px;
+    border-right: 2px solid #377367;
+    /* Added border to the right */
+    padding-right: 20px;
+    /* Add some padding to avoid sticking to the border */
+}
+.details-container {
+    font-size: 24px;
+    padding-left: 50%;
+    margin-left: -700px;
+    margin-top: 20px;
+    margin-left: 30px;
+    /* Adjust margin to the left to create space */
+}
+.name {
+    font-size: 30px;
+    text-align: center;
+}
+.details,
+.details-container {
+    font-size: 24px;
+    padding-left: 50%;
+    margin-left: -700px;
+    text-align: left;
+}
+.line {
+    border-left: 5px solid #377367;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -380px;
+    top: 0;
+}
+.artigos {
+    display: flex;
+    margin-left: 55%;
+    margin-top: -660px;
+}
+.product-link {
+    display: block;
+    /* Makes the entire .bloco clickable */
+    text-decoration: none;
+    color: black;
+    /* Ensures the text color is black */
+    text-align: center;
+    /* Centers the text inside the block */
+}
+.product-link .img {
+    width: 150px;
+    /* Set a fixed width */
+    height: 135px;
+    /* Set a fixed height */
+    margin-bottom: 10px;
+    /* Adds space between the image and the text */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+    /* Ensures the image maintains its aspect ratio */
+}
+.product-link .Catálogo {
+    text-align: center;
+    /* Centers the text under the image */
+    font-size: 20px;
+    padding-top: 10px;
+    /* Adds space between the image and the text */
+}
+.product-link .Catálogo .name {
+    color: black;
+    /* Ensures text stays black */
+}
+.bloco:hover {
+    transition: all 0.25s ease;
+    transform: scale(1.05);
+    z-index: 1;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    /* Centers the .bloco horizontally */
+    align-items: center;
+    /* Centers the .bloco vertically */
+    margin-top: 15px;
+    margin-left: 400px;
+    flex-wrap: wrap;
+}
+.bloco {
+    display: flex;
+    flex-direction: column;  /* Aligns the image and text in a vertical column */
+    justify-content: center;
+    align-items: center;     /* Ensures the image and text are centered within each bloco */
+    margin: 10px;
+}
+.itemname{
+    margin-top: auto;
+    font-size: 0.7em;
+}
+ .Catálogo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 150px;
+            height: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            animation: populate 0.5s ease-out normal backwards;
+        }
+/* Hide default radio buttons */
+input[type="radio"] {
+    display: none;
+}
+/* Style for the custom circle radio buttons */
+.location-radio + label {
+    display: inline-block;
+    width: 18px; /* Adjusted size */
+    height: 18px; /* Adjusted size */
+    border-radius: 50%;
+    border: 2px solid #377367; /* Green border color */
+    background-color: #F1F8E8; /* Light green background */
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/* Change background color and  border when radio is checked */
+input[type="radio"]:checked + label {
+    background-color: blue; /* Dark green when checked */
+    border-color: #377367; /* Dark green border when checked */
+}
+/* Inner circle for the checked radio button */
+input[type="radio"]:checked + label::before {
+    content: '';
+    position: absolute;
+    top: 4px; /* Adjust to center the inner circle */
+    left: 4px; /* Adjust to center the inner circle */
+    width: 8px; /* Inner circle size */
+    height: 8px; /* Inner circle size */
+    border-radius: 50%;
+    background-color: white; /* White inner circle */
+}
+/* Hover effect for the label */
+.location-radio + label:hover {
+    background-color: #E0F1E0; /* Slightly darker background on hover */
+}
+/* Optional: Focus outline for better accessibility */
+input[type="radio"]:focus + label {
+    outline: 2px solid #377367;
+}
+/* Optional: Adjust layout on smaller screens */
+@media screen and (max-width: 786px) {
+    .search-bar {
+        width: 50%;
+    }
+    /* Adjust profile container for smaller screens */
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin-left: 0;
+        border-right: none;
+    }
+    .details-container {
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+h4{
+    margin:0;
+    padding:0;
+}
+h5{
+    margin:0;
+    padding:0;
+}
+.text-add-margin{
+    margin-top:30px;
+}
+/* Rating Styles */
+.star-rating {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+.star {
+    color: #ddd;
+    transition: color 0.2s ease;
+}
+.star.selected {
+    color: #F39C12;
+}
+.rating-value {
+    margin-top: 10px;
+}
+.author-email {
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
+}
+.author-email a {
+    color: #0077CC;
+    text-decoration: none;
+}
+.author-email a:hover {
+    text-decoration: underline;
+}

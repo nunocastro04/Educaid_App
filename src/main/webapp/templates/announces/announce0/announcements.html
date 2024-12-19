@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Educaid - Mochila Unicórnio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../templates/styles/announcements.css">
+    <script src="../templates/script/star.js"></script>
+</head>
+<body>
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <a href="../" class="sidebar-logo">
+            <div class="logo-container">
+                EDUCAID
+                <div class="logo">
+                    <img src="../templates/resources/images/logo_claro_educaid.png" width="30px" height="30px">
+                </div>
+            </div>
+        </a>
+         
+        <ul>
+            <div class="local">Escolha a sua localização:</div> <!-- Added to clearly indicate the section header -->
+            <li>
+                <input type="radio" id="location1" name="location" class="location-radio" data-location="location1">
+                <label for="location1" class="location-label"></label> Açores
+            </li>
+            <li>
+                <input type="radio" id="location2" name="location" class="location-radio" data-location="location2">
+                <label for="location2" class="location-label"></label> Aveiro
+            </li>
+            <li>
+                <input type="radio" id="location3" name="location" class="location-radio" data-location="location3">
+                <label for="location3" class="location-label"></label> Beja
+            </li>
+            <li>
+                <input type="radio" id="location4" name="location" class="location-radio" data-location="location4">
+                <label for="location4" class="location-label"></label> Braga
+            </li>
+            <li>
+                <input type="radio" id="location5" name="location" class="location-radio" data-location="location5">
+                <label for="location5" class="location-label"></label> Bragaça
+            </li>
+            <li>
+                <input type="radio" id="location6" name="location" class="location-radio" data-location="location6">
+                <label for="location6" class="location-label"></label> Castelo Branco
+            </li>
+            <li>
+                <input type="radio" id="location7" name="location" class="location-radio" data-location="location7">
+                <label for="location7" class="location-label"></label> Coimbra
+            </li>
+            <li>
+                <input type="radio" id="location8" name="location" class="location-radio" data-location="location8">
+                <label for="location8" class="location-label"></label> Évora
+            </li>
+            <li>
+                <input type="radio" id="location9" name="location" class="location-radio" data-location="location9">
+                <label for="location9" class="location-label"></label> Faro
+            </li>
+            <li>
+                <input type="radio" id="location10" name="location" class="location-radio" data-location="location10">
+                <label for="location10" class="location-label"></label> Guarda
+            </li>
+            <li>
+                <input type="radio" id="location11" name="location" class="location-radio" data-location="location11">
+                <label for="location11" class="location-label"></label> Leiria
+            </li>
+            <li>
+                <input type="radio" id="location12" name="location" class="location-radio" data-location="location12">
+                <label for="location12" class="location-label"></label> Lisboa
+            </li>
+            <li>
+                <input type="radio" id="location13" name="location" class="location-radio" data-location="location13">
+                <label for="location13" class="location-label"></label> Madeira
+            </li>
+            <li>
+                <input type="radio" id="location14" name="location" class="location-radio" data-location="location14">
+                <label for="location14" class="location-label"></label> Portalegre
+            </li>
+            <li>
+                <input type="radio" id="location15" name="location" class="location-radio" data-location="location15">
+                <label for="location15" class="location-label"></label> Porto
+            </li>
+            <li>
+                <input type="radio" id="location16" name="location" class="location-radio" data-location="location16">
+                <label for="location16" class="location-label"></label> Santarém
+            </li>
+            <li>
+                <input type="radio" id="location17" name="location" class="location-radio" data-location="location17">
+                <label for="location17" class="location-label"></label> Setúbal
+            </li>
+            <li>
+                <input type="radio" id="location18" name="location" class="location-radio" data-location="location18">
+                <label for="location18" class="location-label"></label> Viana do Castelo
+            </li>
+            <li>
+                <input type="radio" id="location19" name="location" class="location-radio" data-location="location19">
+                <label for="location19" class="location-label"></label> Vila Real
+            </li>
+            <li>
+                <input type="radio" id="location20" name="location" class="location-radio" data-location="location20">
+                <label for="location20" class="location-label"></label> Viseu
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <input type="text" class="search-bar" placeholder="Search...">
+
+        <!-- Navigation Links -->
+        <ul class="header-nav">
+            <p><a href="../">Página Inicial</a></p>
+            <p><a href="../rdmannounce">Anúncios</a></p>
+            <p><a href="../about">Sobre Nós</a></p>
+        </ul>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="announcement">
+        <div class="item-info">
+            <h1 class="item-name">Mochila Unicórnio
+            </h1>
+            <div class="item-details">
+                <!-- Image Carousel Section -->
+                <div class="item-image-container">
+                    <!-- Image Radio buttons -->
+                    <input type="radio" name="image-radio" id="image1" checked>
+                    <input type="radio" name="image-radio" id="image2">
+                    <input type="radio" name="image-radio" id="image3">
+
+                    <!-- Carousel Images -->
+                    <div class="item-images">
+                        <img src="../templates/resources/images/mochila-unicornio.jpg" alt="Item Image" class="carousel-image" id="img1">
+                        <img src="../templates/announces/announce0/resources/mochila-pormenor.jpg" alt="Item Image 2" class="carousel-image" id="img2">
+                    </div>
+
+                    <!-- Carousel Arrows -->
+                    <label for="image1" class="carousel-arrow carousel-arrow-left">&#10094;</label>
+                    <label for="image2" class="carousel-arrow carousel-arrow-right">&#10095;</label>
+                </div>
+
+                <!-- Description Section -->
+                <div class="item-description-container">
+                    <h2 class="item-description-title">Descrição</h2>
+                    <p class="item-description">Mochila em bom estado, pouco usada.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Author and Rating Section -->
+            <div class="announcement-footer">
+                <div class="author-info">
+                    <p class="author-name">Postado por: <a href="../user/4" class="author-user">Catarina</a></p>
+                    
+                    <!-- Rating (Moved here) -->
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p class="rating-value">Rating: <span id="rating-number">0</span>/5</p>
+                    </div>
+                    
+                    <p class="author-email">Email: <a href="mailto:email@example.com">catarina@educaid.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import JavaScript file at the end of the body -->
+    <script src="/index.js"></script>
+</body>
+</html>

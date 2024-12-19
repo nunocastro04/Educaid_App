@@ -1,0 +1,309 @@
+/* Basic Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f8e8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #377367;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Keep logo and image at the top */
+}
+
+/* Sidebar logo and image */
+.sidebar-logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.sidebar-logo .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-logo .logo-container .logo {
+    margin-left: 10px;
+}
+
+.sidebar-logo img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Sidebar List */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Keep the locations section aligned */
+}
+
+/* Sidebar Title: "Escolha a localização" */
+.local {
+    font-size: 19px;
+    color: white;
+    margin: 0;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Sidebar Location Items */
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Custom Radio Button Styling */
+.location-radio + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #377367;
+    background-color: #f1f8e8;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Checked Radio Button Styling */
+input[type="radio"]:checked + label {
+    background-color: blue;
+    border-color: #377367;
+}
+
+/* Inner Circle for Checked Radio Button */
+input[type="radio"]:checked + label::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* Hover Effect for Radio Buttons */
+.location-radio + label:hover {
+    background-color: #e0f1e0;
+}
+
+/* Header Section */
+.header {
+    background-color: #377367;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    z-index: 1000;
+}
+
+.search-bar {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px; /* Space between the search bar and other items */
+}
+
+.header-nav {
+    display: flex;
+    gap: 200px; /* Add space between the navigation links */
+    margin-left: 200px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Section (Announcement) */
+.announcement {
+    margin-left: 200px; /* Align with sidebar */
+    margin-top: 60px; /* Adjust for the header height */
+    padding: 20px;
+    flex-grow: 1;
+    height: calc(100vh - 60px); /* Ensure the content area takes up the full height minus header */
+}
+
+/* Item Info */
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.item-name {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image and Description Layout */
+.item-details {
+    display: flex;
+    flex-direction: row; /* Make the image and description side by side */
+    gap: 30px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+/* Image Carousel Styles */
+.item-image-container {
+    position: relative;
+    width: 25%; /* Adjust width */
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.item-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+/* Hide default radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Carousel Images */
+#image1:checked ~ .item-images .carousel-image#img1,
+#image2:checked ~ .item-images .carousel-image#img2,
+#image3:checked ~ .item-images .carousel-image#img3 {
+    display: block;
+}
+
+/* Carousel Arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.carousel-arrow-left {
+    left: 10px;
+}
+
+.carousel-arrow-right {
+    right: 10px;
+}
+
+/* Rating Styles */
+.star-rating {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star {
+    color: #ddd;
+    transition: color 0.2s ease;
+}
+
+.star.selected {
+    color: #f39c12;
+}
+
+.rating-value {
+    margin-top: 10px;
+}
+
+.author-email {
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
+}
+
+.author-email a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.author-email a:hover {
+    text-decoration: underline;
+}
+
+/* Footer with Author Info */
+.announcement-footer {
+    margin-top: 20px;
+}
+
+/* Author Info Section */
+.author-info {
+    margin-left: 20px; /* Align with other content */
+    margin-top: 20px; /* Same space from top */
+}
+
+.author-name {
+    font-size: 1em;
+    color: #777;
+}
+
+.author-user {
+    color: #777;
+    text-decoration: none;
+}
+
+.author-user:hover,
+.author-user:focus {
+    color: #777;
+    text-decoration: none;
+}

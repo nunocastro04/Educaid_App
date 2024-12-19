@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+
+<head>
+    <title>Educaid</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../educaid/templates/styles/indexStyle.css">
+</head>
+
+<body>
+    <div class="search-container main-container">
+        <i class="fa fa-search"></i>
+        <input type="text" id="search-input" placeholder="Search..." autocomplete="off" />
+    </div>
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <div class="educaid">
+            <h2>EDUCAID<div class="logo"><img src="../educaid/templates/resources/images/logo_claro_educaid.png" width="30px" height="30px"></div>
+        </div>
+
+
+        <ul>
+            <div class="local">Escolha a sua localização:</div> <!-- Added to clearly indicate the section header -->
+            <li>
+                <input type="radio" id="location1" name="location" class="location-radio" data-location="location1">
+                <label for="location1" class="location-label"></label> Açores
+            </li>
+            <li>
+                <input type="radio" id="location2" name="location" class="location-radio" data-location="location2">
+                <label for="location2" class="location-label"></label> Aveiro
+            </li>
+            <li>
+                <input type="radio" id="location3" name="location" class="location-radio" data-location="location3">
+                <label for="location3" class="location-label"></label> Beja
+            </li>
+            <li>
+                <input type="radio" id="location4" name="location" class="location-radio" data-location="location4">
+                <label for="location4" class="location-label"></label> Braga
+            </li>
+            <li>
+                <input type="radio" id="location5" name="location" class="location-radio" data-location="location5">
+                <label for="location5" class="location-label"></label> Bragaça
+            </li>
+            <li>
+                <input type="radio" id="location6" name="location" class="location-radio" data-location="location6">
+                <label for="location6" class="location-label"></label> Castelo Branco
+            </li>
+            <li>
+                <input type="radio" id="location7" name="location" class="location-radio" data-location="location7">
+                <label for="location7" class="location-label"></label> Coimbra
+            </li>
+            <li>
+                <input type="radio" id="location8" name="location" class="location-radio" data-location="location8">
+                <label for="location8" class="location-label"></label> Évora
+            </li>
+            <li>
+                <input type="radio" id="location9" name="location" class="location-radio" data-location="location9">
+                <label for="location9" class="location-label"></label> Faro
+            </li>
+            <li>
+                <input type="radio" id="location10" name="location" class="location-radio" data-location="location10">
+                <label for="location10" class="location-label"></label> Guarda
+            </li>
+            <li>
+                <input type="radio" id="location11" name="location" class="location-radio" data-location="location11">
+                <label for="location11" class="location-label"></label> Leiria
+            </li>
+            <li>
+                <input type="radio" id="location12" name="location" class="location-radio" data-location="location12">
+                <label for="location12" class="location-label"></label> Lisboa
+            </li>
+            <li>
+                <input type="radio" id="location13" name="location" class="location-radio" data-location="location13">
+                <label for="location13" class="location-label"></label> Madeira
+            </li>
+            <li>
+                <input type="radio" id="location14" name="location" class="location-radio" data-location="location14">
+                <label for="location14" class="location-label"></label> Portalegre
+            </li>
+            <li>
+                <input type="radio" id="location15" name="location" class="location-radio" data-location="location15">
+                <label for="location15" class="location-label"></label> Porto
+            </li>
+            <li>
+                <input type="radio" id="location16" name="location" class="location-radio" data-location="location16">
+                <label for="location16" class="location-label"></label> Santarém
+            </li>
+            <li>
+                <input type="radio" id="location17" name="location" class="location-radio" data-location="location17">
+                <label for="location17" class="location-label"></label> Setúbal
+            </li>
+            <li>
+                <input type="radio" id="location18" name="location" class="location-radio" data-location="location18">
+                <label for="location18" class="location-label"></label> Viana do Castelo
+            </li>
+            <li>
+                <input type="radio" id="location19" name="location" class="location-radio" data-location="location19">
+                <label for="location19" class="location-label"></label> Vila Real
+            </li>
+            <li>
+                <input type="radio" id="location20" name="location" class="location-radio" data-location="location20">
+                <label for="location20" class="location-label"></label> Viseu
+            </li>
+        </ul>
+
+    </div>
+    <!-- Header Section -->
+    <div class="header">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <!-- Navigation Links -->
+        <ul class="header-nav">
+            <p><a href="../educaid/">Página Inicial</a></p>
+            <p><a href="../educaid/rdmannounce">Anúncios</a></p>
+            <p><a href="../educaid/about">Sobre Nós</a></p>
+        </ul>
+    </div>
+    <div class="banner">
+        <img class="img-banner" src="../educaid/templates/resources/images/schoolgirl.jpg">
+    </div>
+    <div class="banner-text">
+        <h1 class="banner-title">EDUCAID</h1>
+        <div class="banner-logo">
+            <img class="banner-logo-img" src="../educaid/templates/resources/images/logo_claro_educaid.png" alt="EDUCAID Logo">
+        </div>
+    </div>
+    <div class="main-container">
+        <!--<div id="nothing-alert">Nothing Found</div>-->
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/lapis-de-cor.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Lápis de Cor</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/manuais-4.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Manuais Escolares 4ºano</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../educaid/announce/6" class="product-link">
+                <img src="../educaid/templates/resources/images/manuais-matematica-11.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Manuais Matemática 11ºano</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../educaid/announce/7" class="product-link">
+                <img src="../educaid/templates/resources/images/manual-biologia-11.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Manual Biologia 11ºano</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../educaid/announce/4" class="product-link">
+                <img src="../educaid/templates/resources/images/calculadora.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Calculadora</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../educaid/announce/2" class="product-link">
+                <img src="../educaid/templates/resources/images/dossiers.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Dossiers</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/sapatilhas.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Sapatilhas 38</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../educaid/announce/0" class="product-link">
+                <img src="../educaid/templates/resources/images/mochila-unicornio.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Mochila Unicórnio</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../educaid/announce/1" class="product-link">
+                <img src="../educaid/templates/resources/images/papel-cavalinho.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Bloco Papel Cavalinho</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../educaid/announce/3" class="product-link">
+                <img src="../educaid/templates/resources/images/flauta.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Flauta</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/canetas-cor.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Canetas de Cor</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/estojo.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Estojo</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/lapis-cera.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Lápis de Cera</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/paleta-pintura.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Paleta Pintura</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/guaches.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Guaches</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/Regua30cm.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Régua 30cm</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../educaid/announce/5" class="product-link">
+                <img src="../educaid/templates/resources/images/compasso.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Compasso</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/transferidor.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Transferidor</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../educaid/templates/resources/images/aristo.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="name">Aristo</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

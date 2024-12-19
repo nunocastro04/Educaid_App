@@ -1,0 +1,190 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Sobre Nós</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="listVols.js"></script>
+      <link rel="stylesheet" href="../educaid/templates/styles/aboutStyle.css">
+
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <a href="../educaid/" class="sidebar-logo">
+          <div class="logo-container">
+              EDUCAID
+              <div class="logo">
+                  <img src="../educaid/templates/resources/images/logo_claro_educaid.png" width="30px" height="30px">
+              </div>
+          </div>
+      </a>
+      <ul>
+        <div class="local">Escolha a sua localização:</div> <!-- Added to clearly indicate the section header -->
+        <li>
+            <input type="radio" id="location1" name="location" class="location-radio" data-location="location1">
+            <label for="location1" class="location-label"></label> Açores
+        </li>
+        <li>
+            <input type="radio" id="location2" name="location" class="location-radio" data-location="location2">
+            <label for="location2" class="location-label"></label> Aveiro
+        </li>
+        <li>
+            <input type="radio" id="location3" name="location" class="location-radio" data-location="location3">
+            <label for="location3" class="location-label"></label> Beja
+        </li>
+        <li>
+            <input type="radio" id="location4" name="location" class="location-radio" data-location="location4">
+            <label for="location4" class="location-label"></label> Braga
+        </li>
+        <li>
+            <input type="radio" id="location5" name="location" class="location-radio" data-location="location5">
+            <label for="location5" class="location-label"></label> Bragaça
+        </li>
+        <li>
+            <input type="radio" id="location6" name="location" class="location-radio" data-location="location6">
+            <label for="location6" class="location-label"></label> Castelo Branco
+        </li>
+        <li>
+            <input type="radio" id="location7" name="location" class="location-radio" data-location="location7">
+            <label for="location7" class="location-label"></label> Coimbra
+        </li>
+        <li>
+            <input type="radio" id="location8" name="location" class="location-radio" data-location="location8">
+            <label for="location8" class="location-label"></label> Évora
+        </li>
+        <li>
+            <input type="radio" id="location9" name="location" class="location-radio" data-location="location9">
+            <label for="location9" class="location-label"></label> Faro
+        </li>
+        <li>
+            <input type="radio" id="location10" name="location" class="location-radio" data-location="location10">
+            <label for="location10" class="location-label"></label> Guarda
+        </li>
+        <li>
+            <input type="radio" id="location11" name="location" class="location-radio" data-location="location11">
+            <label for="location11" class="location-label"></label> Leiria
+        </li>
+        <li>
+            <input type="radio" id="location12" name="location" class="location-radio" data-location="location12">
+            <label for="location12" class="location-label"></label> Lisboa
+        </li>
+        <li>
+            <input type="radio" id="location13" name="location" class="location-radio" data-location="location13">
+            <label for="location13" class="location-label"></label> Madeira
+        </li>
+        <li>
+            <input type="radio" id="location14" name="location" class="location-radio" data-location="location14">
+            <label for="location14" class="location-label"></label> Portalegre
+        </li>
+        <li>
+            <input type="radio" id="location15" name="location" class="location-radio" data-location="location15">
+            <label for="location15" class="location-label"></label> Porto
+        </li>
+        <li>
+            <input type="radio" id="location16" name="location" class="location-radio" data-location="location16">
+            <label for="location16" class="location-label"></label> Santarém
+        </li>
+        <li>
+            <input type="radio" id="location17" name="location" class="location-radio" data-location="location17">
+            <label for="location17" class="location-label"></label> Setúbal
+        </li>
+        <li>
+            <input type="radio" id="location18" name="location" class="location-radio" data-location="location18">
+            <label for="location18" class="location-label"></label> Viana do Castelo
+        </li>
+        <li>
+            <input type="radio" id="location19" name="location" class="location-radio" data-location="location19">
+            <label for="location19" class="location-label"></label> Vila Real
+        </li>
+        <li>
+            <input type="radio" id="location20" name="location" class="location-radio" data-location="location20">
+            <label for="location20" class="location-label"></label> Viseu
+        </li>
+    </ul>
+    </div>
+    <!-- Header Section -->
+    <div class="header">
+      <input type="text" class="search-bar" placeholder="Search...">
+              <!-- Navigation Links -->
+              <ul class="header-nav">
+                <p><a href="../educaid/">Página Inicial</a></p>
+                <p><a href="../educaid/rdmannounce">Anúncios</a></p>
+                <p><a href="../educaid/about">Sobre Nós</a></p>
+            </ul>
+    </div>
+
+    <div class="main-container">
+      <section id="about" class="about">
+        <div class="about-content">
+          <h3>SOBRE NÓS</h3>
+          <p>Na Educaid, acreditamos que a educação deve ser acessível a todos.
+            Por isso, criámos uma plataforma que estabelece o contacto entre quem tem material escolar não utilizado,
+            excedente ou usado e quem o pode reutilizar.</p>
+          <p>A nossa missão é reduzir o desperdício e gerar um impacto positivo. Milhares de materiais escolares - livros,
+            artigos de papelaria, mochilas e outros - são descartados anualmente, enquanto muitos alunos e educadores
+            ficam sem ferramentas essenciais. A Educaid transforma o desperdício em novas oportunidades de aprendizagem.
+          </p>
+
+          <p>Juntos, podemos promover a partilha e contribuir para um futuro mais sustentável.</p>
+          <h3>CONTACTOS</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> +351 358 887 788</li>
+            <li><i class="fas fa-check-circle"></i> support@educaid.com</li>
+          </ul>
+          <div class="cards mt-5">
+            <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <img src="../educaid/templates/resources/resources/medium-shot-happy-kids-painting.jpg" class="card-img-top" alt="Card 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img src="../educaid/templates/resources/resources/cute-boy-blue-t-shirt-holding-box-with-tools-white-wall.jpg" class="card-img-top" alt="Card 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img src="../educaid/templates/resources/resources/four-kids-using-electronic-parts-build-robot.jpg" class="card-img-top" alt="Card 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img src="../educaid/templates/resources/resources/child-standing-with-coloring-pencils.jpg" class="card-img-top" alt="Card 3">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  </html>

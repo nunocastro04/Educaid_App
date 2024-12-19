@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #377367;
+  color: white;
+  padding: 8px 20px; /* Reduced the top and bottom padding */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 200px;
+  width: calc(100% - 200px);
+  z-index: 1000;
+}
+
+.search-bar {
+  width: 220px; /* Reduced width */
+  padding: 8px; /* Reduced padding */
+  font-size: 16px; /* Reduced font size */
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #377367;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Sidebar logo and image */
+.sidebar-logo {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.sidebar-logo a {
+  color: white; /* Ensure the color stays white */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.sidebar-logo a:hover {
+  color: white; /* Prevent color change to blue */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.sidebar-logo .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-logo .logo-container .logo {
+  margin-left: 10px;
+}
+
+.sidebar-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline; /* Underline on hover for sidebar links */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #377367;
+  line-height: 1.6;
+  margin-top: 40px;
+  margin-left: 200px;
+  background-color: #f1f8e8;
+}
+
+.header-nav-wrapper {
+  position: relative;
+  top: 50px; /* Adjusted this to move the nav links down by 30px */
+  left: 200px;
+  z-index: 100;
+}
+
+.header-nav {
+  display: flex;
+  gap: 200px; /* Add space between the navigation links */
+  margin-left: 200px;
+}
+
+.header-nav p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+  padding-top: 8px; /* Add padding to move the text down */
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  padding-top: 8px; /* Add padding to move the text down */
+}
+
+.header-nav a:hover {
+  text-decoration: underline; /* Underline on hover for header links */
+}
+
+.about {
+  padding: 50px;
+  background-color: #f1f8e8;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.about-content h3 {
+  margin-top: 20px;
+  color: #377367;
+}
+
+.about-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+  text-align: justify;
+  width: 50%;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.about-content i {
+  color: #27ae60;
+  margin-right: 10px;
+}
+
+.div-images {
+  position: fixed;
+  top: 68px;
+  right: 0px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.about-images {
+  height: 300px;
+  width: auto;
+}
+
+.container-app {
+  color: #605678;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  padding: 10px 20px;
+  width: 250px;
+  height: auto;
+  border-radius: 50px;
+  border: none;
+  background-color: #605678;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  text-align: center;
+  max-width: 50%;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+header {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.nav-pills {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Ensure inherited color */
+}
+
+a:hover {
+  color: inherit; /* Prevent color change */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Custom Nav Pills color */
+.nav-pills .nav-link {
+  top: 10px;
+  color: #605678;
+}
+
+.container {
+  align-items: center;
+  height: 300px;
+  width: 250px;
+}
+
+nav {
+  position: sticky;
+  top: 20px;
+  z-index: 10;
+  padding: 10px;
+}
+
+#cardCarousel {
+  width: 600px;
+  height: auto;
+  top: -385px;
+  margin-left: 900px;
+  position: relative;
+}
+
+.main-container {
+  margin-top: 50px;
+}
+
+.about-content {
+  margin-top: 150px;
+}

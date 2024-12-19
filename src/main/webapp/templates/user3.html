@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Educaid - Rodolfo's Profile</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="../templates/styles/profile.css">
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const stars = document.querySelectorAll('.star');
+    const ratingDisplay = document.getElementById('rating-number');
+
+    let ratingValue = 5; // User final rating value
+
+    // Function to update the rating display and stars
+    function updateRating(rating) {
+        // Round to one decimal point
+        rating = Math.round(rating * 2) / 2; 
+
+        // Update stars
+        stars.forEach(star => {
+            const value = parseInt(star.getAttribute('data-value'));
+            if (value <= rating) {
+                star.classList.add('selected');
+            } else {
+                star.classList.remove('selected');
+            }
+        });
+
+        // Update rating display
+        ratingDisplay.textContent = rating;
+    }
+    // Initialize with the current rating
+    updateRating(ratingValue);
+});
+    </script>
+    
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <div class="educaid">
+            <h2>EDUCAID
+                <div class="logo">
+                    <img src="../templates/resources/images/logo_claro_educaid.png" width="30px" height="30px">
+                </div>
+            </h2>
+        </div>
+
+        <ul>
+            <div class="local">Escolha a localização:</div>
+            <li>
+                <input type="radio" id="location1" name="location" class="location-radio" data-location="location1">
+                <label for="location1" class="location-label"></label> Açores
+            </li>
+            <li>
+                <input type="radio" id="location2" name="location" class="location-radio" data-location="location2">
+                <label for="location2" class="location-label"></label> Aveiro
+            </li>
+            <li>
+                <input type="radio" id="location3" name="location" class="location-radio" data-location="location3">
+                <label for="location3" class="location-label"></label> Beja
+            </li>
+            <li>
+                <input type="radio" id="location4" name="location" class="location-radio" data-location="location4">
+                <label for="location4" class="location-label"></label> Braga
+            </li>
+            <li>
+                <input type="radio" id="location5" name="location" class="location-radio" data-location="location5">
+                <label for="location5" class="location-label"></label> Bragaça
+            </li>
+            <li>
+                <input type="radio" id="location6" name="location" class="location-radio" data-location="location6">
+                <label for="location6" class="location-label"></label> Castelo Branco
+            </li>
+            <li>
+                <input type="radio" id="location7" name="location" class="location-radio" data-location="location7">
+                <label for="location7" class="location-label"></label> Coimbra
+            </li>
+            <li>
+                <input type="radio" id="location8" name="location" class="location-radio" data-location="location8">
+                <label for="location8" class="location-label"></label> Évora
+            </li>
+            <li>
+                <input type="radio" id="location9" name="location" class="location-radio" data-location="location9">
+                <label for="location9" class="location-label"></label> Faro
+            </li>
+            <li>
+                <input type="radio" id="location10" name="location" class="location-radio" data-location="location10">
+                <label for="location10" class="location-label"></label> Guarda
+            </li>
+            <li>
+                <input type="radio" id="location11" name="location" class="location-radio" data-location="location11">
+                <label for="location11" class="location-label"></label> Leiria
+            </li>
+            <li>
+                <input type="radio" id="location12" name="location" class="location-radio" data-location="location12">
+                <label for="location12" class="location-label"></label> Lisboa
+            </li>
+            <li>
+                <input type="radio" id="location13" name="location" class="location-radio" data-location="location13">
+                <label for="location13" class="location-label"></label> Madeira
+            </li>
+            <li>
+                <input type="radio" id="location14" name="location" class="location-radio" data-location="location14">
+                <label for="location14" class="location-label"></label> Portalegre
+            </li>
+            <li>
+                <input type="radio" id="location15" name="location" class="location-radio" data-location="location15">
+                <label for="location15" class="location-label"></label> Porto
+            </li>
+            <li>
+                <input type="radio" id="location16" name="location" class="location-radio" data-location="location16">
+                <label for="location16" class="location-label"></label> Santarém
+            </li>
+            <li>
+                <input type="radio" id="location17" name="location" class="location-radio" data-location="location17">
+                <label for="location17" class="location-label"></label> Setúbal
+            </li>
+            <li>
+                <input type="radio" id="location18" name="location" class="location-radio" data-location="location18">
+                <label for="location18" class="location-label"></label> Viana do Castelo
+            </li>
+            <li>
+                <input type="radio" id="location19" name="location" class="location-radio" data-location="location19">
+                <label for="location19" class="location-label"></label> Vila Real
+            </li>
+            <li>
+                <input type="radio" id="location20" name="location" class="location-radio" data-location="location20">
+                <label for="location20" class="location-label"></label> Viseu
+            </li>
+        </ul>
+
+    </div>
+    <!-- Header Section -->
+    <div class="header">
+        <input type="text" class="search-bar" placeholder="Search...">
+
+        <!-- Navigation Links -->
+        <ul class="header-nav">
+            <p><a href="../">Página Inicial</a></p>
+            <p><a href="../rdmannounce">Anúncios</a></p>
+            <p><a href="../about">Sobre Nós</a></p>
+        </ul>
+    </div>
+    <div class="profile-container">
+        <div class="profile-panel">
+            <div class="profile-header">
+                <div><img class="round-img" src="../templates/resources/images/img1.jpg"></div>
+                <div class="name">
+                    <h2>Rodolfo</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="details-container">
+        <div class="card-detail">
+            <h5>Email:</h5>
+            <h4><a href="mailto:joao@gmail.com">rodolfo@educaid.com</a></h4>
+            <h5 class = "text-add-margin">From:</h5>
+            <h4>Lisboa</h4>
+            <h5 class = "text-add-margin">Rating:</h5>
+            <!-- Author and Rating Section -->
+            <div class="announcement-footer">
+                <div class="author-info">
+            
+                    <!-- Rating (Moved here) -->
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+                <article>
+                    <h3>Account info</h3>
+                    <div class="details">
+                        <div class="card-detail">
+                            <h5>`${user.name}'s backpack`</h5>
+                            <h4 th:text="${user.getAds()}"></h4>
+                        </div>
+                    </div>
+                </article>
+                -->
+    <div class="line"></div>
+
+    <div class="artigos">
+        <h1>ARTIGOS DISPONÍVEIS</h1>
+    </div>
+    <div class="main-container">
+        <div class="bloco">
+            <a href="../announce/7" class="product-link">
+                <img src="../templates/resources/images/manual-biologia-11.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="itemname">Manual Biologia 11ºano</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="../announce/6" class="product-link">
+                <img src="../templates/resources/images/manuais-matematica-11.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="itemname">Manuais Matemática 11ºano</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../templates/resources/images/papel-cavalinho.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="itemname">Bloco Papel Cavalinho</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../templates/resources/images/transferidor.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="itemname">Transferidor</h2>
+                </div>
+            </a>
+        </div>
+        <div class="bloco">
+            <a href="#" class="product-link">
+                <img src="../templates/resources/images/aristo.jpg" class="img">
+                <div class="Catálogo">
+                    <h2 class="itemname">Aristo</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
